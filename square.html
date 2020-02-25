@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <script>
+            function multiply(m1){
+                var result =[];
+                
+                for(var i=0;i<m1.length;i++){
+                    result[i]=[];
+                    for(var j=0;j<m1[0].length;j++){
+                        var sum=0;
+                    for(var k=0;k<m1[0].length;k++){
+                      sum=m1[i][j]*m1[i][j];
+                    }
+                    result[i][j]=sum;
+                }
+                }
+            for(var i=0;i<m1.length;i++){
+                  for(var j=0;j<m1[0].length;j++){
+                      document.write(" "+result[i][j]);
+                    }
+                    document.write("<br>");
+                }
+            }
+            var m1=[
+                [1,2,3],
+                [3,8,4],
+                [4,2,1]
+            ];
+            
+           multiply(m1);
+
+        </script>
+    </body>
+</html>

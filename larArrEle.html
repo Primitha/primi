@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+           function largeEle(num)
+           {
+               var large=num[0];
+               for(var i=0;i<num.length;i++)
+               {
+                   if(num[i]>large)
+                   {
+                       large=num[i];
+                    }
+                }
+               return large;
+           }
+           document.write(largeEle([1,2,3,4,5]));
+        </script>
+    </body>
+</html>

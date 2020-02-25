@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <script>
+            var arr1=new Array(2);
+            for(var i=0;i<arr1.length;i++)
+            {
+                arr1[i]=[];
+            }
+            var h=0;
+            for(var i=0;i<2;i++)
+            {
+                for(var j=0;j<2;j++)
+                {
+                    arr1[i][j]=h++;
+                }
+            }
+            for(var i=0;i<2;i++)
+            {
+                for(var j=0;j<2;j++)
+                {
+                    document.write(arr1[i][j]+"");
+                }
+                document.write("<br>");
+            }
+
+        </script>
+    </body>
+</html>

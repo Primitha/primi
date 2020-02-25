@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+        var arm=0,a,num,temp;
+        num=prompt("enter the number");
+        temp=num;
+        while(temp>0)
+        {
+            a=temp%10;
+            arm=arm+a*a*a;
+            temp=parseInt(temp/10);
+        }
+        if(arm==num)
+        {
+            alert("armstrong");
+        }
+        else
+        {
+            alert("not a armstrong");
+        }        
+        </script>
+    </body>
+</html>
