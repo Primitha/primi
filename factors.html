@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            function factorize(number)
+            {
+                var factors=[],i;
+                for(i=1;i<=number;i++)
+                {
+                if(number%i==0)
+                {
+                    factors.push(i);
+                }
+            }
+            return factors;
+            }
+            document.write(factorize(16));
+        </script>
+    </body>
+</html>

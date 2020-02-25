@@ -1,14 +1,19 @@
 <html>
-        <body>
-            <script>
-                 var i,num,fact;
-            fact=1;
-            num=4;
-            for(i=1;i<=num;i++)
+    <body>
+        <script>
+            var n=prompt("enter the number");
+            function factorial(n)
             {
-                fact=fact*i;
+                if(n==0)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return n*factorial(n-1);
+                }
             }
-            document.write(fact);
-            </script>
-        </body>
+            document.write(factorial(n));
+        </script>
+    </body>
 </html>

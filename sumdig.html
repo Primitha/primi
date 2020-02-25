@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            
+            function sumdig(num)
+            {   
+                var sum=0;
+                var rem;
+                while(num>0)
+                {
+                rem=num%10;
+                sum=sum+rem;
+                num=Math.floor(num/10);
+                }
+                return sum;
+            }
+            document.write(sumdig(432));
+        </script>
+    </body>
+</html>

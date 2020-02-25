@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            var base=prompt("enetr base num");
+            var power=prompt("enter power");
+            function exponent(base,power)
+            {
+            var value=1;
+            var exp=power;
+            while(power-- > 0)
+            {
+                value=value*base;
+            }
+            return value;
+            }
+            document.write(base+"<br>");
+            document.write(power+"<br>");
+            document.write(exponent(base,power));
+        </script>
+    </body>
+</html>
